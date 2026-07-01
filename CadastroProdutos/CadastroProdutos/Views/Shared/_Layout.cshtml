@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gestão de Acessos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CadastroProdutos.styles.css" asp-append-version="true" />
+</head>
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow mb-4">
+            <div class="container">
+                <a class="navbar-brand fw-bold" asp-controller="Estoque" asp-action="Index">🛡️ Gestão de Acessos</a>
+
+                <div class="navbar-nav ms-auto align-items-center">
+                    @if (User.Identity?.IsAuthenticated ?? false)
+                    {
+                        @* Foto de Perfil *@
+                        <img src="~/img/perfis/001ded8f-a89e-4f89-b675-3065d1009436.png "
+                            width="35" height="35" class="rounded-circle me-2 border border-white" style="object-fit: cover;" alt="Avatar" />
+                        
+                        @* Nome/Email do Usuário *@
+                        @* <span class="navbar-text text-white me-3 fw-bold">@User.Identity.Name</span> *@
+                        <a class="navbar-brand fw-bold" asp-controller="Estoque" asp-action="Index"> <span class="navbar-text text-white me-3 fw-bold">@User.Identity.Name</span></a>
+
+                      @*   O BOTÃO PARA ACESSAR A PÁGINA DO ADMIN
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <a class="btn btn-sm btn-warning fw-bold me-3 shadow-sm text-dark" asp-controller="Admin" asp-action="Painel">
+                                ⚙️ Painel do Admin
+                            </a>
+                        } *@
+
+                        @* Botão de Sair *@
+                        <form asp-controller="Auth" asp-action="Logout" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">Sair</button>
+                        </form>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+            <div class="mb-4">
+                <div class="mb-4">
+                   
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted bg-white py-3 mt-5">
+        <div class="container text-center">
+            &copy; 2026 - CadastroProdutos
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

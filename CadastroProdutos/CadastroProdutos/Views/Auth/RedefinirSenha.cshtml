@@ -1,0 +1,59 @@
+﻿@model CadastroProdutos.DTO.RedefinirSenhaDto
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Redefinir Senha";
+
+
+    // Se você usa um layout limpo para telas de autenticação, defina aqui.
+    // Ex: Layout = "_LayoutDeslogado";
+    
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card p-4 shadow border-0 bg-white card-redefinir" style="width: 100%; max-width: 420px; ">
+
+        <div class="text-center mb-4">
+            <h3 class="fw-bold text-primary">Primeiro Acesso</h3>
+            <p class="text-muted small">Crie sua nova senha definitiva para acessar o sistema.</p>
+        </div>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger py-2 small" asp-validation-summary="ModelOnly"></div>
+        }
+
+        <form asp-controller="Auth" asp-action="RedefinirSenha" method="post">
+            @Html.AntiForgeryToken()
+
+            <input type="hidden" asp-for="Email" />
+
+            <div class="mb-3">
+                <label asp-for="NovaSenha" class="form-label small fw-bold text-secondary">Nova Senha</label>
+                <input asp-for="NovaSenha" type="password" class="form-control" placeholder="No mínimo 6 caracteres" required />
+                <span asp-validation-for="NovaSenha" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-4">
+                <label asp-for="ConfirmarSenha" class="form-label small fw-bold text-secondary">Confirmar Nova Senha</label>
+                <input asp-for="ConfirmarSenha" type="password" class="form-control" placeholder="Digite a senha novamente" required />
+                <span asp-validation-for="ConfirmarSenha" class="text-danger small"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 fw-bold py-2 shadow-sm mb-3">
+                💾 Salvar Nova Senha
+            </button>
+
+            <div class="text-center">
+                <a asp-action="Login" class="text-decoration-none small text-muted">Voltar para o Login</a>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

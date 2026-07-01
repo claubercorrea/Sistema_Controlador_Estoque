@@ -1,0 +1,30 @@
+﻿@model CadastroProdutos.DTO.CriarUsuarioDto
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2>Cadastrar Novo Usuário</h2>
+    <form asp-controller="Admin" asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label>E-mail</label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Senha</label>
+            <input asp-for="Senha" type="password" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Foto de Perfil</label>
+            <input type="file" name="fotoArquivo" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Permissão (Role)</label>
+            <select asp-for="Role" class="form-control">
+                <option value="Admin">Administrador</option>
+                <option value="Funcionario">Funcionário</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar Usuário</button>
+    </form>
+</div>

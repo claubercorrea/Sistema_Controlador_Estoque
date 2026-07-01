@@ -1,0 +1,86 @@
+﻿@model IEnumerable<CadastroProdutos.DTO.ExibirUsuarioDto>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="fw-bold text-dark m-0">Gerenciador Central de Credenciais</h2>
+        <p class="text-muted small m-0">Controle operacional de usuários e atribuição de cargos hierárquicos.</p>
+    </div>
+    <div class="d-flex gap-2 justify-content-center text-center">
+        <a asp-controller="Admin" asp-action="Cadastrar" class="btn btn-success fw-bold px-4 shadow-sm">➕ ADICIONAR NOVO COLABORADOR</a>
+        <a asp-controller="Estoque" asp-action="Index" class="btn btn-primary fw-bold shadow-sm">Voltar</a>
+    </div>
+</div>
+
+<div class="table-responsive shadow-sm rounded">
+    <table class="table bg-white table-striped align-middle m-0">
+        <thead class="table-dark">
+            <tr>
+                <th width="100">Foto</th>
+                <th>E-mail Corporativo</th>
+                <th>Status da Conta</th>
+                <th>Nível de Permissão</th>
+                <th width="450">Ações Operacionais</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var u in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="@(string.IsNullOrEmpty(u.FotoUrl) ? "https://cdn-icons-png.flaticon.com/512/149/149071.png" : u.FotoUrl)"
+                             class="rounded-circle border shadow-sm" width="40" height="40" alt="Perfil" />
+                    </td>
+                    <td class="fw-bold text-secondary">@u.Email</td>
+                    <td>
+                        @if (u.PrimeiroAcesso)
+                        {
+                            <span class="badge bg-warning text-dark border border-warning fw-semibold">Pendente Redefinição</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-success border border-success fw-semibold">Conta Ativa</span>
+                        }
+                    </td>
+                    <td>
+                        <span class="badge bg-primary text-uppercase px-2 py-1">@u.Role</span>
+                    </td>
+                    <td>
+                        <div class="d-flex flex-column gap-2">
+
+                            <form asp-action="AlterarNivelAcesso" method="post" class="d-flex align-items-center">
+                                <input type="hidden" name="userId" value="@u.Id" />
+                                <select name="novaRole" class="form-select form-select-sm me-2 shadow-sm" style="max-width: 200px;">
+                                    <option value="Funcionario">Funcionário Comercial</option>
+                                    <option value="Admin">Administrador Geral</option>
+                                </select>
+                                <button type="submit" class="btn btn-sm btn-dark px-3 fw-bold shadow-sm">Alterar Cargo</button>
+                            </form>
+
+                            <hr class="my-1 text-muted" />
+
+                        </div>
+                    </td>
+
+
+                    <td>
+                        <form asp-controller="Admin" asp-action="DeletarUsuario" method="post" style="display:inline;">
+                            @Html.AntiForgeryToken()
+
+                            <input type="hidden" name="userId" value="@u.Id" />
+
+                            <button type="submit" class="btn btn-sm btn-danger fw-bold"
+                                    onclick="return confirm('Tem certeza absoluta que deseja excluir permanentemente esta conta de login?');">
+                                ❌ Excluir Conta
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

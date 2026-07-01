@@ -1,0 +1,121 @@
+﻿@model IEnumerable<CadastroProdutos.DTO.ExibirProdutoDto>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1 class="fw-bolder text-black text-secondary m-0 text-center mt-5 mb-5">Sistema de controle de estoque </h1>    
+<div class="d-flex justify-content-between align-items-center mb-4 mt-5">
+
+
+    <div class="d-flex gap-2 mt-2 justify-content-center" style="margin-left:auto; margin-right:auto;">
+
+        <a asp-action="ExportarExcel" class="btn btn-success py-2 px-4 fw-bold shadow-sm">📊 Exportar para Excel (.xlsx)</a>
+
+        @* TRAVA EXCLUSIVA: Só renderiza o botão se o usuário logado for Admin *@
+        @if (User.IsInRole("Admin"))    
+        {
+            <a asp-controller="Admin" asp-action="Painel" class="btn btn-success fw-bold shadow-sm d-flex align-items-center">
+                ➕ Cadastrar Funcionário
+            </a>
+            
+            <a asp-controller="Admin" asp-action="Cadastrar" class="btn btn-warning fw-bold text-dark">
+                ⚙️ Painel Admin
+            </a>
+        }   
+
+        <span class="badge bg-dark px-3 py-2 d-flex align-items-center fw-bold">Módulo Comercial</span>
+    </div>
+
+
+</div>
+
+
+<div class="mb-3 text-end">
+    <a class="btn btn-sm btn-primary fw-bold shadow-sm salvar" asp-controller="Estoque" asp-action="SalvarProduto">
+        ➕ Cadastrar Produto
+    </a>
+</div>
+
+@* Bloco de Filtro/Pesquisa *@
+<div class="card p-3 shadow-sm border-0 mb-4 bg-white d-flex">
+
+
+    <form method="get" asp-action="Index" class="row g-2" style="display:flex; justify-content:center">
+        
+        <div class="col-md-5" style="justify-content:space-between; justify-content:center;">
+            <input name="busca" class="form-control" placeholder="Pesquisar por nome ou categoria..." />
+        </div>
+        <div class="col-md-2"style="display:flex;">
+            <button type="submit" class="btn btn-primary w-100 fw-bold ">🔍 Filtrar</button>
+        </div>
+    </form>
+    @* Central de Relatórios *@
+    </div>
+
+@* Tabela de Listagem de Produtos *@
+<div class="table-responsive shadow-sm rounded">
+    <table class="table table-white table-hover align-middle m-0">
+        <thead class="table-dark">
+            <tr>
+                <th>Código (ID)</th>
+                <th>Nome do Produto</th>
+                <th>Quantidade em Estoque</th>
+                <th>Valor Unitário</th>
+                <th>Categoria</th>
+                <th width="180">Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-muted py-4">Nenhum produto localizado no banco de dados.</td>
+                </tr>
+            }
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td><span class="text-monospace text-muted">#@p.Id</span></td>
+                    <td class="fw-bold text-dark">@p.Nome</td>
+                    <td>
+                        <span class="@(p.Quantidade < 5 ? "text-danger fw-bold" : "text-secondary")">
+                            @p.Quantidade
+                        </span>
+                    </td>
+                    <td>@p.Preco.ToString("C")</td>
+                    <td><span class="badge bg-light text-dark border">@p.Categoria</span></td>
+                    <td>
+                        <div class="d-flex gap-2">
+                            <a class="btn btn-sm btn-outline-secondary fw-bold" asp-controller="Estoque" asp-action="Editar" asp-route-id="@p.Id">
+                                Editar
+                            </a>
+                            <form asp-controller="Estoque" asp-action="Excluir" asp-route-id="@p.Id" method="post"
+                                  onsubmit="return confirm('Tem certeza que deseja excluir o produto @p.Nome?');" class="d-inline">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-danger btn-sm fw-bold">
+                                    Excluir
+                                </button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@* Central de Relatórios
+<div class="card p-3 shadow-sm border-0 mt-4 bg-white">
+    <h5 class="fw-bold text-dark mb-3">🖨️ Central de Relatórios e Exportações</h5>
+    <div class="d-flex align-items-end flex-wrap gap-3">
+        <a asp-action="ExportarExcel" class="btn btn-success py-2 px-4 fw-bold shadow-sm">📊 Exportar para Excel (.xlsx)</a>
+
+        <form asp-action="EnviarPdfEmail" method="post" class="d-flex align-items-end bg-light p-3 rounded border">
+            <div class="me-2">
+                <label class="form-label small fw-bold text-muted">Filtrar Categoria no PDF:</label>
+                <input name="categoriaSelecionada" class="form-control form-control-sm" placeholder="Ex: Eletrônicos" />
+            </div>
+            <button type="submit" class="btn btn-warning py-2 fw-bold text-dark shadow-sm">✉️ Enviar PDF por E-mail</button>
+        </form>
+    </div>
+</div> *@
+
