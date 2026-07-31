@@ -1,0 +1,158 @@
+﻿@model IEnumerable<SistemaCompleto.TDO.ProdutoDto>
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Relatório de Vencimentos";
+
+    var posicao = 1;
+}
+
+<!-- TITULO DA PAGINA -->
+<div class="d-flex justify-content-between align-items-center mb-3 botoes_vencimentos">
+    <div class="titulovencimento btn btn-danger disabled text-start">
+        <h3 class="mb-0"><i class="bi bi-clock-history text-warning me-2"></i>Produtos Próximos do Vencimento e Vencidos</h3>
+        <small class="text-white">Itens com vencimento nos próximos 30 dias</small>
+    </div>
+</div>
+
+<!-- FORMULÁRIO DE FILTROS -->
+<form asp-controller="Produto" asp-action="Vencimentos" method="get" class="row g-2 mb-4 align-items-end container-fluid produtos_vencidos">
+    <!-- Pesquisa por Nome -->
+    <div class="col-md-3">
+        <label class="form-label fw-bold justify-content-center d-flex">Pesquisar</label>
+        <input type="text" name="pesquisa" value="@ViewData["FiltroAtual"]" class="form-control text-center text-black fw-bolder" placeholder="Nome do produto..." />
+    </div>
+
+    <!-- Categoria -->
+    <div class="col-md-3">
+        <label class="form-label fw-bold justify-content-center d-flex">Categoria</label>
+        <select name="categoria" class="form-select text-black fw-bolder opcoes_produtos">
+            <option value="">-- Todas --</option>
+            <option value="Achocolatados" selected="@(ViewData["CategoriaAtual"]?.ToString() == "Achocolatados")">Achocolatados</option>
+            <option value="Produtos Zero" selected="@(ViewData["CategoriaAtual"]?.ToString() == "Produtos Zero")">Produtos Zero</option>
+            <option value="Creme de Leite" selected="@(ViewData["CategoriaAtual"]?.ToString() == "Creme de Leite")">Creme de Leite</option>
+            <option value="Leite Condensado" selected="@(ViewData["CategoriaAtual"]?.ToString() == "Leite Condensado")">Leite Condensado</option>
+            <option value="Leite em po" selected="@(ViewData["CategoriaAtual"]?.ToString() == "Leite em po")">Leite em pó</option>
+            <option value="Outros" selected="@(ViewData["CategoriaAtual"]?.ToString() == "Outros")">Outros</option>
+        </select>
+    </div>
+
+    <!-- Filtro por Status/Situação de Vencimento -->
+    <div class="col-md-4">
+        <label class="form-label fw-bold justify-content-center d-flex">Situação da Validade</label>
+        <select name="statusVencimento" class="form-select text-black fw-bolder">
+            <option value="todos" selected="@(ViewData["StatusAtual"]?.ToString() == "todos")">Todos (Vencidos e A Vencer)</option>
+            <option value="vencidos" selected="@(ViewData["StatusAtual"]?.ToString() == "vencidos")">Apenas Vencidos</option>
+            <option value="aVencer" selected="@(ViewData["StatusAtual"]?.ToString() == "aVencer")">Apenas Próximos do Vencimento</option>
+            <option value="hoje" selected="@(ViewData["StatusAtual"]?.ToString() == "hoje")">Vencem Hoje</option>
+        </select>
+    </div>
+
+    <!-- Botão de Filtrar -->
+    <div class="col-md-2 container_botao_filtre">
+        <button type="submit" class="btn btn-primary w-100 botao_filtre">
+            <i class="bi bi-funnel me-1"></i> Filtrar
+        </button>
+    </div>
+</form>
+
+<!-- CONTAINER INTEGRADO DA TABELA E AÇÕES -->
+<div class="border border-secondary rounded-3 shadow overflow-hidden">
+
+    <!-- BARRA SUPERIOR DOS BOTÕES (COLADA NA TABELA) -->
+    <div class="d-flex justify-content-end flex-wrap gap-2 p-3 bg-dark border-bottom border-secondary">
+        <a asp-controller="Produto" asp-action="Index" class="btn btn-primary text-white fw-bold d-flex align-items-center gap-2">
+            <i class="bi bi-house-door-fill text-white"></i>
+            <span>Home</span>
+        </a>
+
+        @if (User.IsInRole("Admin"))
+        {
+            <!-- BOTÃO DE EXPORTAR PASSANDO OS MESMOS FILTROS APLICADOS DA TELA -->
+            <a asp-controller="Produto"
+               asp-action="ExportarVencimentos"
+               asp-route-pesquisa="@ViewData["FiltroAtual"]"
+               asp-route-categoria="@ViewData["CategoriaAtual"]"
+               asp-route-statusVencimento="@ViewData["StatusAtual"]"
+               class="btn btn-success text-white fw-bold d-flex align-items-center gap-2">
+                <i class="bi bi-file-earmark-excel-fill"></i>
+                <span>Exportar Vencimentos (Excel)</span>
+            </a>
+        }
+    </div>
+
+    <!-- TABELA DE VENCIMENTOS -->
+    <div class="table-responsive">
+        <table class="table table-dark table-hover align-middle mb-0">
+            <thead class="table-borderless text-uppercase small text-muted border-bottom border-secondary">
+                <tr class="text-center">
+                    <th scope="col" style="width: 50px;">Id</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Validade</th>
+                    <th scope="col">Status / Urgência</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var produto in Model)
+                    {
+                        var diasparavencer = (produto.Validade.Date - DateTime.Now.Date).Days;
+
+                        <tr class="text-center">
+                            <!-- Posição Sequencial na Tela -->
+                            <td class="fw-bold text-white">@posicao</td>
+
+                            <!-- Nome e Categoria -->
+                            <td><span class="fw-semibold text-white">@produto.Nome</span></td>
+                            <td><span class="badge bg-secondary">@produto.Categoria</span></td>
+
+                            <!-- Data de Validade Formatada -->
+                            <td class="text-warning fw-bold">@produto.Validade.ToString("dd/MM/yyyy")</td>
+
+                            <!-- Status de Urgência -->
+                            <td>
+                                @if (diasparavencer > 7)
+                                {
+                                    <span class="badge bg-info text-dark fs-6">
+                                        <i class="bi bi-clock me-1"></i> @diasparavencer dias restantes
+                                    </span>
+                                }
+                                else if (diasparavencer > 0)
+                                {
+                                    <span class="badge bg-warning text-dark fs-6">
+                                        <i class="bi bi-exclamation-triangle me-1"></i> Vence em @diasparavencer dia(s)
+                                    </span>
+                                }
+                                else if (diasparavencer == 0)
+                                {
+                                    <span class="badge bg-danger text-white fw-bold fs-6">
+                                        <i class="bi bi-exclamation-octagon me-1"></i> Vence Hoje!
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger fs-6">
+                                        <i class="bi bi-x-circle me-1"></i> Vencido há @Math.Abs(diasparavencer) dia(s)
+                                    </span>
+                                }
+                            </td>
+                        </tr>
+
+                        posicao++;
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <!-- Ajustado para 5 colunas para centralizar corretamente -->
+                        <td colspan="5" class="text-center py-4 text-muted">
+                            Nenhum produto próximo do vencimento encontrado.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CadastroProdutos",
+    "\\CadastroProdutos\\CadastroProdutos",
+    "\\CadastroProdutos\\CadastroProdutos\\Data",
+    "\\CadastroProdutos\\CadastroProdutos\\DTO",
+    "\\CadastroProdutos\\CadastroProdutos\\Models",
+    "\\CadastroProdutos\\CadastroProdutos\\Services",
+    "\\CadastroProdutos\\CadastroProdutos\\Views",
+    "\\CadastroProdutos\\CadastroProdutos\\Views\\Produto",
+    "\\CadastroProdutos\\CadastroProdutos\\Views\\Profile"
+  ],
+  "SelectedNode": "\\CadastroProdutos\\CadastroProdutos.sln",
+  "PreviewInSolutionExplorer": false
+}

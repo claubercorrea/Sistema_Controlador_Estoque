@@ -1,0 +1,145 @@
+﻿@model IEnumerable<SistemaCompleto.TDO.FuncionarioDto>
+
+@{
+    ViewData["Title"] = "Lista de Funcionários";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm border-0 container_opcoes">
+        <div class="card-header bg-primary text-white d-flex align-items-center justify-content-center py-3">
+            <h5 class="card-title mb-0"><i class="bi bi-people me-2"></i>Gestão de Funcionários</h5>
+        </div>
+
+        <div class="card-body justify-content-center d-inline p-4">
+            <!-- Barra de Pesquisa -->
+            <form method="get" asp-action="ListaFuncionarios" class="row mb-4">
+                <div class="col-md-6 mover_pesquisa_lista_fincionarios">
+                    <div class="input-group d-flex justify-content-center align-content-center" style="margin:auto;">
+                        <input type="text" name="pesquisa" value="@ViewData["FiltroAtual"]" class="form-control d-flex justify-content-center align-content-center" placeholder="Buscar por nome ou e-mail..." />
+                        <button type="submit" class="btn btn-primary"><i class="bi bi-search"></i> Pesquisar</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="container mb-3 d-flex justify-content-end">
+                <a asp-controller="Usuario" asp-action="Cadastrar" class="btn btn-success btn-sm">
+                    <i class="bi bi-person-plus me-1"></i>Novo Funcionário
+                </a>
+            </div>
+
+            <div class="table-responsive justify-content-center text-center">
+                <table class="table table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Usuário</th>
+                            <th>E-mail</th>
+                            <th>Nível de Acesso</th>
+                            <th>Status da Conta</th>
+                            <th>Permissões</th>
+                            <th class="text-center">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var func in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="@(string.IsNullOrEmpty(func.FotoUrl) ? "/img/perfis/default-avatar.png" : func.FotoUrl)"
+                                             class="rounded-circle me-2 img-thumbnail" style="width: 40px; height: 40px; object-fit: cover;" />
+                                        <span class="fw-bold">@func.NomeCompleto</span>
+                                    </div>
+                                </td>
+                                <td>@func.Email</td>
+                                <td>
+                                    @if (func.CargoRole == "Admin")
+                                    {
+                                        <span class="badge bg-danger"><i class="bi bi-shield-lock me-1"></i>Administrador</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-primary"><i class="bi bi-person me-1"></i>Operador</span>
+                                    }
+                                </td>
+                                <td>
+                                    @if (func.IsTemporario)
+                                    {
+                                        <span class="badge bg-warning text-dark">
+                                            <i class="bi bi-clock me-1"></i>Temporário (Expira: @func.LockoutEnd?.ToString("dd/MM/yyyy"))
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-success"><i class="bi bi-check-circle me-1"></i>Ativo / Permanente</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-action="Permissoes" asp-route-id="@func.Id" class="btn btn-warning btn-sm me-1">
+                                        <i class="bi bi-shield-lock"></i> Permissões
+                                    </a>
+                                </td>
+                                <td>
+                                    <!-- Botão que abre o Modal de Exclusão -->
+                                    <button type="button"
+                                            class="btn btn-danger btn-sm"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#modalExcluirUsuario"
+                                            data-id="@func.Id"
+                                            data-nome="@func.NomeCompleto"
+                                            title="Excluir Usuário">
+                                        <i class="bi bi-trash"></i> Excluir
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Exclusão de Funcionário -->
+<div class="modal fade" id="modalExcluirUsuario" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <form asp-controller="Usuario" asp-action="Excluir" method="post">
+            @Html.AntiForgeryToken()
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="bi bi-exclamation-triangle-fill me-2"></i>Confirmar Exclusão</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+                    <p class="text-dark">Tem certeza que deseja remover o funcionário <strong id="nomeUsuarioModal"></strong> do sistema?</p>
+                    <small class="text-muted">Esta ação não poderá ser desfeita.</small>
+                    <input type="hidden" id="idUsuarioModal" name="id" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-danger"><i class="bi bi-trash me-1"></i>Sim, Excluir</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Script para passar os dados do botão para o Modal -->
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var modalExcluir = document.getElementById('modalExcluirUsuario');
+
+            if (modalExcluir) {
+                modalExcluir.addEventListener('show.bs.modal', function (event) {
+                    var button = event.relatedTarget;
+
+                    var id = button.getAttribute('data-id');
+                    var nome = button.getAttribute('data-nome');
+
+                    document.getElementById('nomeUsuarioModal').textContent = nome;
+                    document.getElementById('idUsuarioModal').value = id;
+                });
+            }
+        });
+    </script>
+}

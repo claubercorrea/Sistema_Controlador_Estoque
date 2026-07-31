@@ -1,0 +1,118 @@
+﻿@model SistemaMvcCompleto.TDO.PerfilDto
+
+@{
+    ViewData["Title"] = "Perfil do Operador";
+}
+
+<div class="container mt-4 ">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-7">
+
+            <div class="card shadow-sm border-0 container_opcoes">
+                <div class="card-header bg-primary text-white d-flex align-items-center justify-content-center py-3">
+                    <h5 class="card-title mb-0 text-center">
+                        <i class="bi bi-person-badge me-2"></i>Perfil do Administrador
+                    </h5>
+                    
+                </div>
+                <span class="badge bg-black fs-6">@Model.Cargo</span>
+                <div class="card-body p-4">
+
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                    <form asp-controller="Perfil" asp-action="AtualizarPerfil" method="post" enctype="multipart/form-data">
+                        @Html.AntiForgeryToken()
+
+                        <!-- 🖼️ Foto do Operador -->
+                        <div class="text-center mb-4">
+                            <div class="position-relative d-inline-block mb-3">
+                                @if (!string.IsNullOrEmpty(Model.FotoUrlAtual))
+                                {
+                                    <img id="imgPreview" src="@Model.FotoUrlAtual" class="rounded-circle img-thumbnail shadow-sm" style="width: 130px; height: 130px; object-fit: cover;" alt="Foto" />
+                                }
+                                else
+                                {
+                                    <img id="imgPreview" src="/img/perfis/default-avatar.png" class="rounded-circle img-thumbnail shadow-sm" style="width: 130px; height: 130px; object-fit: cover;" alt="Avatar Padrão" />
+                                }
+                            </div>
+
+                            <div class="mb-3 col-md-8 mx-auto">
+                                <label for="FotoPerfil" class="form-label text-black fw-bolder small fw-bold">Alterar Foto de Identificação</label>
+                                <input type="file" class="form-control form-control-sm" id="FotoPerfil" name="FotoPerfil" accept="image/*" onchange="previewImagem(event)">
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <!-- 👤 Informações Cadastrais -->
+                        <h6 class="text-primary fw-bold mb-3 text-center"><i class="bi bi-info-circle me-1"></i>Dados Cadastrais</h6>
+
+                        <div class="mb-3 d-flex flex-column justify-content-center align-items-center">
+                            <label asp-for="NomeCompleto" class="form-label fw-semibold"></label>
+                            <input asp-for="NomeCompleto" class="form-control w-50" />
+                            <span asp-validation-for="NomeCompleto" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-4 d-flex flex-column justify-content-center align-items-center">
+                            <label asp-for="Email" class="form-label fw-semibold"></label>
+                            <input asp-for="Email" class="form-control bg-light w-50" readonly />
+                            <div class="form-text text-center text-black">Login de acesso não editável.</div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <!-- 🔑 Alteração de Senha -->
+                        <h6 class="text-primary fw-bold mb-3 text-center"><i class="bi bi-shield-lock me-1"></i>Segurança / Alterar Senha</h6>
+                        <p class="text-black small text-center ">Preencha os campos abaixo apenas se desejar redefinir sua senha de acesso.</p>
+
+                        <div class="mb-3 d-flex flex-column justify-content-center align-items-center">
+                            <label asp-for="SenhaAtual" class="form-label fw-semibold"></label>
+                            <input asp-for="SenhaAtual" class="form-control w-50" placeholder="Digite sua senha atual" />
+                            <span asp-validation-for="SenhaAtual" class="text-danger small"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="NovaSenha" class="form-label fw-semibold"></label>
+                                <input asp-for="NovaSenha" class="form-control " placeholder="Mínimo 6 caracteres" />
+                                <span asp-validation-for="NovaSenha" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="ConfirmarNovaSenha" class="form-label fw-semibold"></label>
+                                <input asp-for="ConfirmarNovaSenha" class="form-control" placeholder="Repita a nova senha" />
+                                <span asp-validation-for="ConfirmarNovaSenha" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+                            <a asp-controller="Produto" asp-action="Index" class="btn btn-danger px-4 me-md-2">
+                                Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-primary px-4">
+                                <i class="bi bi-save me-1"></i>Salvar Alterações
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function previewImagem(event) {
+            const input = event.target;
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('imgPreview').src = e.target.result;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+}

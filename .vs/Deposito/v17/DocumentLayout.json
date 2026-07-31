@@ -1,0 +1,246 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Data\\DbInitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\Data\\DbInitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\CadastroProdutos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\CadastroProdutos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Models\\Produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\Models\\Produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Data\\SistemaContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\Data\\SistemaContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\DTO\\LoginDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\DTO\\LoginDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\DTO\\RedefinirSenhaDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\DTO\\RedefinirSenhaDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Views\\Produto\\Delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\Views\\Produto\\Delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\IFormFile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\Services\\IFormFile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\IEmailService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\Services\\IEmailService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\IAdminService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\Services\\IAdminService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\EmailService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\Services\\EmailService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CadastroProdutos\\CadastroProdutos\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Models\\Produto.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\Models\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T00:40:20.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Models\\User.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Models\\User.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T00:40:10.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RedefinirSenhaDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\DTO\\RedefinirSenhaDto.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\DTO\\RedefinirSenhaDto.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\DTO\\RedefinirSenhaDto.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\DTO\\RedefinirSenhaDto.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T00:36:00.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\DTO\\LoginDto.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\DTO\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\DTO\\LoginDto.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\DTO\\LoginDto.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T00:34:57.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T00:34:46.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SistemaContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Data\\SistemaContext.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\Data\\SistemaContext.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Data\\SistemaContext.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\Data\\SistemaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T00:34:40.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CadastroProdutos.csproj",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\CadastroProdutos.csproj",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\CadastroProdutos.csproj",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\CadastroProdutos.csproj",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\CadastroProdutos.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-22T21:55:28.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Views\\Produto\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\Views\\Produto\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Views\\Produto\\Delete.cshtml",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\Views\\Produto\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T21:54:56.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IFormFile.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\IFormFile.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\Services\\IFormFile.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\IFormFile.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\Services\\IFormFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T21:54:51.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\IEmailService.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\Services\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\IEmailService.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\Services\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T21:54:50.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\IAdminService.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\Services\\IAdminService.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\IAdminService.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\Services\\IAdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T21:49:43.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\EmailService.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\Services\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T21:49:41.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "CadastroProdutos\\CadastroProdutos\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\CadastroProdutos\\CadastroProdutos\\Services\\AuthService.cs",
+              "RelativeToolTip": "CadastroProdutos\\CadastroProdutos\\Services\\AuthService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T21:44:43.497Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

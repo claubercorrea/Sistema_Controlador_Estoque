@@ -1,0 +1,142 @@
+html {
+  font-size: 14px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+    
+body {
+    margin-bottom: 25%;
+    background-repeat: no-repeat;
+    background-color: #000000 !important;
+    background: #000000 url("close-up-mockup-device-used-by-server-hub-it-specialists-doing-brainstorming.webp") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    /*    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;*/
+    border-radius: 20px;
+    color: black;
+    padding: 0;
+    margin-bottom: 60px;
+    max-width: 100vw;
+    width: auto;
+    margin:0;
+    
+/*    overflow-y:hidden;*/
+}
+.NomeUserBemvindo {
+    background: rgba(0,0, 0, .75);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius:25px;
+    width:50%;
+    text-align:center;
+    font-size: 1.8rem;
+}
+.container_opcoes li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+label,select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bolder;
+    text-align:center;
+}
+  
+    input.form-control, select.form-select.text-black.fw-bolder.opcoes_produtos {
+        text-align: center;
+        font-weight: bolder;
+        border-radius: 25px;
+    }
+
+.container_cadastra_funcionario {
+    background: rgba(255, 255, 255, .75);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius:25px;
+}
+option{
+    font-weight:bolder;
+}
+.form-select {
+/*    width: auto;*/
+    margin: auto;
+    border-radius: 25px;    
+}
+.opcao_cadastra {
+    width: auto;
+  
+}
+.input_cadastro{
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+   align-items:center;
+}
+.tempodata {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    gap: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container_opcoes {
+    background: rgba(255, 255, 255, .75);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    border:1px solid black;
+}
+li{
+    display:flex;
+    justify-content:center;
+    
+}
+li:hover {
+    border: 2px solid black;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: black;
+    border-radius:25px; 
+    transition-timing-function:steps(1, start);
+}
+.mover_pesquisa_lista_fincionarios{
+    margin:auto;
+}
+
+h5#modalExcluirEstoqueLabel, h5#modalExcluirLabel, h5#modalExcluirTodosLabel {
+    margin: auto;
+}
+/*
+@media (max-width:1398px){
+
+}
+*/

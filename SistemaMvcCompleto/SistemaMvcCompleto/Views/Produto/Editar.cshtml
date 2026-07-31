@@ -1,0 +1,84 @@
+﻿@model SistemaCompleto.TDO.ProdutoDto
+
+@{
+    ViewData["Title"] = "Editar Produto";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="~/CadastroProdutos.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0 container_opcoes">
+                <div class="card-header bg-primary text-dark py-3">
+                    <h2 class="card-title h4 mb-0 text-white fw-bold text-center">Editar Produto</h2>
+                </div>
+                <div class="card-body p-4 text-center ">
+                    <form asp-action="Editar" method="post">
+                        <!-- Token de segurança obrigatório para POST no ASP.NET Core -->
+                        @Html.AntiForgeryToken()
+
+                        <!-- Sumário de validação para erros vindos do servidor -->
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <!-- Campo oculto guardando o ID para a atualização correta no banco -->
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="mb-3 text-center d-flex flex-column justify-content-center align-items-center   ">
+                            <label asp-for="Nome" class="form-label fw-bold">Nome do Produto</label>
+                            <input asp-for="Nome" class="form-control w-auto" placeholder="Ex: Creme de Leite" />
+                            <span asp-validation-for="Nome" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3 ">
+                            <label asp-for="Categoria" class="form-label fw-bold ">Categoria</label>
+                            <select asp-for="Categoria" class="form-select selecao_edite w-auto">
+                                <option value="">-- Selecione a Categoria --</option>
+                                <option value="Acholatados">Acholatados</option>
+                                <option value="Produtos Zero">Produtos Zero</option>
+                                <option value="Creme de Leite">Creme de Leite</option>
+                                <option value="Leite Condensado">Leite Condensado</option>
+                                <option value="Leite em po">Leite em po</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                            <span asp-validation-for="Categoria" class="text-danger small"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="QuantidadeEstoque" class="form-label fw-bold">Quantidade em Estoque</label>
+                                <input asp-for="QuantidadeEstoque" type="number" class="form-control " min="0" />
+                                <span asp-validation-for="QuantidadeEstoque" class="text-danger small"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Validade" class="form-label fw-bold">Data de Validade</label>
+                                <input asp-for="Validade" type="date" class="form-control" />
+                                <span asp-validation-for="Validade" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 text-center d-flex flex-column justify-content-center align-items-center ">
+                            <label asp-for="Codigo_barra" class="form-label fw-bold">Código de Barra</label>
+                            <input asp-for="Codigo_barra" class="form-control w-50" placeholder="Digite o código identificador" />
+                            <span asp-validation-for="Codigo_barra" class="text-danger small"></span>
+                        </div>
+
+                        <div class="d-flex gap-3 justify-content-center mt-5">
+                            <button type="submit" class="btn btn-primary btn-3d px-2 fw-bold w-auto">Salvar Alterações</button>
+                            <a asp-controller="Produto" asp-action="Index" class="btn-3d btn btn-danger px-5">Voltar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

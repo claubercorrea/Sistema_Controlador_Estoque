@@ -1,0 +1,98 @@
+﻿@model SistemaMvcCompleto.TDO.RegistrarUsuarioDto
+
+@{
+    ViewData["Title"] = "Cadastrar Novo Usuário";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card shadow-sm border-0 container_cadastra_funcionario">
+                <div class="card-header bg-primary text-white py-3">
+                    <h5 class="card-title mb-0 text-center"><i class="bi bi-person-plus me-2"></i>Novo Usuário / Operador</h5>
+                </div>
+                <div class="card-body p-4 ">
+
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                    <form asp-action="Cadastrar" method="post">
+                        @Html.AntiForgeryToken()
+
+                        <div class="mb-3 input_cadastro">
+                            <label asp-for="NomeCompleto" class="form-label fw-bolder"></label>
+                            <input asp-for="NomeCompleto" class="form-control w-50" placeholder="Ex: João da Silva" />
+                            <span asp-validation-for="NomeCompleto" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3 input_cadastro">
+                            <label asp-for="Email" class="form-label fw-bolder"></label>
+                            <input asp-for="Email" class="form-control w-50" placeholder="usuario@empresa.com" />
+                            <span asp-validation-for="Email" class="text-danger small"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Senha" class="form-label "></label>
+                                <input asp-for="Senha" class="form-control" placeholder="Senha" />
+                                <span asp-validation-for="Senha" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="ConfirmarSenha" class="form-label "></label>
+                                <input asp-for="ConfirmarSenha" class="form-control" placeholder="ConfirmarSenha" />
+                                <span asp-validation-for="ConfirmarSenha" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <!-- 🛡️ Seleção de Permissões -->
+                        <h6 class="text-primary fw-bold mb-3 text-center"><i class="bi bi-shield-check me-1"></i>Definição de Acesso</h6>
+
+                        <div class="mb-3 ">
+                            <label asp-for="TipoAcesso" class="form-label  "></label>
+                            <select asp-for="TipoAcesso" class="form-select fw-bolder opcao_cadastra"  id="selectTipoAcesso" onchange="toggleDataExpiracao()">
+                                <option value="Usuario">Usuário Comum (Operador)</option>
+                                <option value="Admin">Administrador (Acesso Total)</option>
+                                <option value="Temporario">Uso Temporário (Com Data Limite)</option>
+                            </select>
+                            <span asp-validation-for="TipoAcesso" class="text-danger small"></span>
+                        </div>
+
+                        <!-- ⏳ Campo Exclusivo para Acesso Temporário -->
+                        <div class="mb-3 d-none tempodata" id="divDataExpiracao">
+                            <label asp-for="DataExpiracao" class="form-label text-warning-emphasis"></label>
+                            <input asp-for="DataExpiracao" class="form-control w-50 tempodata " type="date" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                            <span asp-validation-for="DataExpiracao" class="text-danger small"></span>
+                            <div class="form-text text-center ">O usuário será bloqueado automaticamente após esta data.</div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-center mt-4">
+                            <a asp-controller="Produto" asp-action="Index" class="btn btn-danger px-4 me-md-2">Cancelar</a>
+                            <button type="submit" class="btn btn-primary px-4"><i class="bi bi-check-circle me-1"></i>Criar Acesso</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function toggleDataExpiracao() {
+            const select = document.getElementById('selectTipoAcesso');
+            const divData = document.getElementById('divDataExpiracao');
+
+            if (select.value === 'Temporario') {
+                divData.classList.remove('d-none');
+            } else {
+                divData.classList.add('d-none');
+            }
+        }
+
+        // Executa ao carregar para manter o estado caso a página recarregue com erro de validação
+        document.addEventListener('DOMContentLoaded', toggleDataExpiracao);
+    </script>
+}

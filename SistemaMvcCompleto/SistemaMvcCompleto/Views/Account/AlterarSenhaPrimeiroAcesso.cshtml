@@ -1,0 +1,68 @@
+﻿@model SistemaCompleto.TDO.RedefinirSenhaDto
+
+@{
+    ViewData["Title"] = "Primeiro Acesso - Redefinir Senha";
+}
+
+<link rel="stylesheet" href="~/CadastroProdutos.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<div class="container mt-5 movimentar_login">
+    <div class="row justify-content-center container_login">
+        <div class="col-md-5">
+            <div class="card shadow-sm mover_login">
+
+                <div class="card bg-dark text-white text-center py-3 container_vidro_login">
+                    <h3>
+                        <img src="/css/icones/estoque-pronto.png" alt="Logo" class="me-3" />
+                        PRIMEIRO ACESSO
+                    </h3>
+                </div>
+
+                <div class="card-body p-4">
+                    <p class="text-muted text-center small mb-4">
+                        Por segurança, confirme sua senha atual e escolha uma nova senha para continuar.
+                    </p>
+
+                    <!-- Exibe erros globais do ModelState / Identity -->
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger text-center small p-2 mb-3" role="alert"></div>
+
+                    <form asp-action="AlterarSenhaPrimeiroAcesso" asp-controller="Account" method="post">
+
+                        <input type="hidden" asp-for="Email" />
+
+                        <!-- Senha Atual -->
+                        <div class="form-group mb-3">
+                            <label asp-for="SenhaProvisoria" class="form-label fw-bold">Senha Atual</label>
+                            <input asp-for="SenhaProvisoria" type="password" class="form-control" placeholder="Digite a senha atual/temporária" autocomplete="current-password" />
+                            <span asp-validation-for="SenhaProvisoria" class="text-danger small d-block mt-1"></span>
+                        </div>
+
+                        <!-- Nova Senha -->
+                        <div class="form-group mb-3">
+                            <label asp-for="NovaSenha" class="form-label fw-bold">Nova Senha</label>
+                            <input asp-for="NovaSenha" type="password" class="form-control" placeholder="Digite a nova senha" autocomplete="new-password" />
+                            <span asp-validation-for="NovaSenha" class="text-danger small d-block mt-1"></span>
+                        </div>
+
+                        <!-- Confirmar Nova Senha -->
+                        <div class="form-group mb-3">
+                            <label asp-for="ConfirmarSenha" class="form-label fw-bold">Confirmar Nova Senha</label>
+                            <input asp-for="ConfirmarSenha" type="password" class="form-control" placeholder="Repita a nova senha" autocomplete="new-password" />
+                            <span asp-validation-for="ConfirmarSenha" class="text-danger small d-block mt-1"></span>
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-dark w-100 logar">Salvar e Continuar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
