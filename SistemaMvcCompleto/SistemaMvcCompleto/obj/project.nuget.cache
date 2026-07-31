@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RbFDhxK2izE=",
+  "dgSpecHash": "ywe8QWvbMX8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
+  "projectFilePath": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADM\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ADM\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -74,9 +74,9 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "A Microsoft.Extensions.Identity.Core PackageReference não será removida. Considere remover este pacote de suas dependências, pois provavelmente é desnecessário.",
-      "projectPath": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
+      "projectPath": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
+      "filePath": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
       "targetGraphs": []
     }
   ]

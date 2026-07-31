@@ -8,11 +8,18 @@ using SistemaCompleto.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Configurar DbContext
+// 1. Configurar DbContext com Resiliência (EnableRetryOnFailure)
 builder.Services.AddDbContext<SistamaProdutocontext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        sqlOptions => sqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 5,                   // Tenta conectar até 5 vezes em caso de falha de rede
+            maxRetryDelay: TimeSpan.FromSeconds(10), // Espera até 10 segundos entre as tentativas
+            errorNumbersToAdd: null
+        )
+    ));
 
-//2.Configurar Rate Limiter(Unificado)
+// 2. Configurar Rate Limiter (Unificado)
 builder.Services.AddRateLimiter(options =>
 {
     options.AddFixedWindowLimiter(policyName: "LoginLimit", opt =>
@@ -56,7 +63,6 @@ builder.Services.AddScoped<IExcelService, ExcelService>();
 builder.Services.AddScoped<PrimeiroAcessoFilter>();
 
 // 🎯 Registrar Controllers e Views 
-// Nota: Se o PrimeiroAcessoFilter continuar dando 404, remova-o temporariamente daqui para testar
 builder.Services.AddControllersWithViews(options =>
 {
     options.Filters.AddService<PrimeiroAcessoFilter>();
@@ -64,12 +70,19 @@ builder.Services.AddControllersWithViews(options =>
 
 var app = builder.Build();
 
-// 5. Executar DbInitializer (Roda ANTES do app aceitar requisições)
+// 5. Executar Migrations e DbInitializer automaticamente ao iniciar
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     try
     {
+        // Resgata o DbContext
+        var context = services.GetRequiredService<SistamaProdutocontext>();
+
+        // 🚀 Aplica todas as migrations pendentes criando o banco/tabelas na nuvem
+        await context.Database.MigrateAsync();
+
+        // 🚀 Executa a carga inicial/seed de dados
         await DbInitializer.InitializeAsync(services);
     }
     catch (Exception ex)
