@@ -1,41 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\",
+  "WorkspaceRootPath": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\github\\projetosgrandes\\sistema_estoque\\sistema_controlador_estoque\\sistemamvccompleto\\sistemamvccompleto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\github\\projetosgrandes\\sistema_estoque\\sistema_controlador_estoque\\sistemamvccompleto\\sistemamvccompleto\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\github\\projetosgrandes\\sistema_estoque\\sistema_controlador_estoque\\sistemamvccompleto\\sistemamvccompleto\\views\\produto\\vencimentos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\views\\produto\\vencimentos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\services\\iexcelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\services\\iexcelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\github\\projetosgrandes\\sistema_estoque\\sistema_controlador_estoque\\sistemamvccompleto\\sistemamvccompleto\\views\\usuario\\listafuncionarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\views\\usuario\\listafuncionarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\github\\projetosgrandes\\sistema_estoque\\sistema_controlador_estoque\\sistemamvccompleto\\sistemamvccompleto\\services\\iprodutoservicecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\services\\iprodutoservicecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\services\\iprodutoservicecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\github\\projetosgrandes\\sistema_estoque\\sistema_controlador_estoque\\sistemamvccompleto\\sistemamvccompleto\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\services\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\services\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\services\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\views\\produto\\vencimentos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\views\\produto\\vencimentos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\views\\usuario\\listafuncionarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\views\\usuario\\listafuncionarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\github\\projetosgrandes\\sistema_estoque\\sistema_controlador_estoque\\sistemamvccompleto\\sistemamvccompleto\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\github\\projetosgrandes\\sistema_estoque\\sistema_controlador_estoque\\sistemamvccompleto\\sistemamvccompleto\\sistemamvccompleto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\sistemamvccompleto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\sistemamvccompleto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\github\\projetosgrandes\\sistema_estoque\\sistema_controlador_estoque\\sistemamvccompleto\\sistemamvccompleto\\views\\produto\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|c:\\users\\adm\\onedrive\\desktop\\deposito\\sistemamvccompleto\\sistemamvccompleto\\views\\produto\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FA0CBFD4-5A5D-4791-998C-A6A79985C66F}|SistemaMvcCompleto\\SistemaMvcCompleto.csproj|solutionrelative:sistemamvccompleto\\views\\produto\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -46,33 +58,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ListaFuncionarios.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Usuario\\ListaFuncionarios.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Usuario\\ListaFuncionarios.cshtml",
               "RelativeDocumentMoniker": "SistemaMvcCompleto\\Views\\Usuario\\ListaFuncionarios.cshtml",
-              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Usuario\\ListaFuncionarios.cshtml",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Usuario\\ListaFuncionarios.cshtml",
               "RelativeToolTip": "SistemaMvcCompleto\\Views\\Usuario\\ListaFuncionarios.cshtml",
               "ViewState": "AgIAABsAAAAAAAAAAAAAABAAAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-29T22:28:51.702Z",
               "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Program.cs",
-              "RelativeDocumentMoniker": "SistemaMvcCompleto\\Program.cs",
-              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Program.cs",
-              "RelativeToolTip": "SistemaMvcCompleto\\Program.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAwwHQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T05:35:52.641Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -87,29 +86,74 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IExcelService.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\IExcelService.cs",
+              "RelativeDocumentMoniker": "SistemaMvcCompleto\\Services\\IExcelService.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\IExcelService.cs",
+              "RelativeToolTip": "SistemaMvcCompleto\\Services\\IExcelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T03:30:08.518Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\ITokenService.cs",
+              "RelativeDocumentMoniker": "SistemaMvcCompleto\\Services\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\ITokenService.cs",
+              "RelativeToolTip": "SistemaMvcCompleto\\Services\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T03:29:55.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "SistemaMvcCompleto\\Services\\IUsuarioService.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\IUsuarioService.cs",
+              "RelativeToolTip": "SistemaMvcCompleto\\Services\\IUsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T03:29:53.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "SistemaMvcCompleto\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\TokenService.cs",
+              "RelativeToolTip": "SistemaMvcCompleto\\Services\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T03:29:52.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\appsettings.json",
               "RelativeDocumentMoniker": "SistemaMvcCompleto\\appsettings.json",
-              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\appsettings.json",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\appsettings.json",
               "RelativeToolTip": "SistemaMvcCompleto\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-07-31T02:55:36.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "IProdutoServicecs.cs",
-              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\IProdutoServicecs.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\IProdutoServicecs.cs",
               "RelativeDocumentMoniker": "SistemaMvcCompleto\\Services\\IProdutoServicecs.cs",
-              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\IProdutoServicecs.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\IProdutoServicecs.cs",
               "RelativeToolTip": "SistemaMvcCompleto\\Services\\IProdutoServicecs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -117,11 +161,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "PerfilController.cs",
-              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Controllers\\PerfilController.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Controllers\\PerfilController.cs",
               "RelativeDocumentMoniker": "SistemaMvcCompleto\\Controllers\\PerfilController.cs",
-              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Controllers\\PerfilController.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Controllers\\PerfilController.cs",
               "RelativeToolTip": "SistemaMvcCompleto\\Controllers\\PerfilController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -129,11 +173,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Vencimentos.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Produto\\Vencimentos.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Produto\\Vencimentos.cshtml",
               "RelativeDocumentMoniker": "SistemaMvcCompleto\\Views\\Produto\\Vencimentos.cshtml",
-              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Produto\\Vencimentos.cshtml",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Produto\\Vencimentos.cshtml",
               "RelativeToolTip": "SistemaMvcCompleto\\Views\\Produto\\Vencimentos.cshtml",
               "ViewState": "AgIAAMYAAAAAAAAAAADwv9QAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -141,11 +185,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "SistemaMvcCompleto.csproj",
-              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
               "RelativeDocumentMoniker": "SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
-              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
               "RelativeToolTip": "SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -153,11 +197,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Controllers\\ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "SistemaMvcCompleto\\Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "SistemaMvcCompleto\\Controllers\\ProdutoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -165,11 +209,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Editar.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Produto\\Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Produto\\Editar.cshtml",
               "RelativeDocumentMoniker": "SistemaMvcCompleto\\Views\\Produto\\Editar.cshtml",
-              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Produto\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Views\\Produto\\Editar.cshtml",
               "RelativeToolTip": "SistemaMvcCompleto\\Views\\Produto\\Editar.cshtml",
               "ViewState": "AgIAABkAAAAAAAAAAAAAwD4AAAByAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

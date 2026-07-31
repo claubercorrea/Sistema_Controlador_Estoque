@@ -3055,11 +3055,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
+      "projectUniqueName": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
       "projectName": "SistemaMvcCompleto",
-      "projectPath": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
+      "projectPath": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\SistemaMvcCompleto.csproj",
       "packagesPath": "C:\\Users\\ADM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\obj\\",
+      "outputPath": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
