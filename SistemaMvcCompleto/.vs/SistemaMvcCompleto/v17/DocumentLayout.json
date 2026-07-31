@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -60,19 +60,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-07-29T22:28:51.702Z",
               "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Program.cs",
-              "RelativeDocumentMoniker": "SistemaMvcCompleto\\Program.cs",
-              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Program.cs",
-              "RelativeToolTip": "SistemaMvcCompleto\\Program.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAwwGwAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T05:35:52.641Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -92,6 +79,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaMvcCompleto\\Program.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Program.cs",
+              "RelativeToolTip": "SistemaMvcCompleto\\Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAwwHcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T05:35:52.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\appsettings.json",
@@ -100,8 +100,7 @@
               "RelativeToolTip": "SistemaMvcCompleto\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-31T02:55:36.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-31T02:55:36.977Z"
             },
             {
               "$type": "Document",

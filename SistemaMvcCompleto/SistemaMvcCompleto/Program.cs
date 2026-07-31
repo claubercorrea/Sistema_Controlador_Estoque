@@ -70,6 +70,9 @@ builder.Services.AddControllersWithViews(options =>
 
 var app = builder.Build();
 
+// 🚀 Força a exibição da página de erro detalhada para depuração na nuvem
+app.UseDeveloperExceptionPage();
+
 // 5. Executar Migrations e DbInitializer automaticamente ao iniciar
 using (var scope = app.Services.CreateScope())
 {
