@@ -1,0 +1,78 @@
+﻿@model SistemaCompleto.TDO.EditarPermissoesDto
+
+@{
+    ViewData["Title"] = "Gerenciar Permissões";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-dark text-white py-3">
+                    <h5 class="card-title mb-0"><i class="bi bi-shield-check me-2"></i>Alterar Nível de Acesso</h5>
+                </div>
+                <div class="card-body p-4">
+
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <div class="mb-3">
+                        <label class="form-label text-muted small fw-bold">Funcionário</label>
+                        <input value="@Model.NomeCompleto" class="form-control bg-light" readonly />
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label text-muted small fw-bold">E-mail</label>
+                        <input value="@Model.Email" class="form-control bg-light" readonly />
+                    </div>
+
+                    <hr class="my-4">
+
+                    <form asp-action="Permissoes" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" asp-for="UsuarioId" />
+
+                        <div class="mb-3">
+                            <label asp-for="TipoAcesso" class="form-label fw-semibold"></label>
+                            <select asp-for="TipoAcesso" class="form-select" id="selectTipoAcesso" onchange="toggleDataExpiracao()">
+                                <option value="Usuario">Usuário Comum (Operador)</option>
+                                <option value="Admin">Administrador (Acesso Total)</option>
+                                <option value="Temporario">Uso Temporário (Com Data Limite)</option>
+                            </select>
+                            <span asp-validation-for="TipoAcesso" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-4 d-none" id="divDataExpiracao">
+                            <label asp-for="DataExpiracao" class="form-label fw-semibold text-warning-emphasis"></label>
+                            <input asp-for="DataExpiracao" class="form-control" type="date" value="@(Model.DataExpiracao?.ToString("yyyy-MM-dd"))" />
+                            <span asp-validation-for="DataExpiracao" class="text-danger small"></span>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                            <a asp-action="ListaFuncionarios" class="btn btn-danger px-4 me-md-2">Cancelar</a>
+                            <button type="submit" class="btn btn-primary px-4"><i class="bi bi-save me-1"></i>Salvar Permissão</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function toggleDataExpiracao() {
+            const select = document.getElementById('selectTipoAcesso');
+            const divData = document.getElementById('divDataExpiracao');
+
+            if (select.value === 'Temporario') {
+                divData.classList.remove('d-none');
+            } else {
+                divData.classList.add('d-none');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', toggleDataExpiracao);
+    </script>
+}
