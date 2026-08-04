@@ -58,7 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 8,
+=======
+          "SelectedChildIndex": 5,
+>>>>>>> d4def62495c4c7945e88bbb2cfffdcd49132f7f3
           "Children": [
             {
               "$type": "Document",
@@ -100,6 +104,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "ITokenService.cs",
               "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\Services\\ITokenService.cs",
@@ -137,6 +142,22 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaMvcCompleto\\Program.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Program.cs",
+              "RelativeToolTip": "SistemaMvcCompleto\\Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAwwHcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T05:35:52.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+>>>>>>> d4def62495c4c7945e88bbb2cfffdcd49132f7f3
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\Deposito\\SistemaMvcCompleto\\SistemaMvcCompleto\\appsettings.json",
               "RelativeDocumentMoniker": "SistemaMvcCompleto\\appsettings.json",
@@ -144,8 +165,7 @@
               "RelativeToolTip": "SistemaMvcCompleto\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-31T02:55:36.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-31T02:55:36.977Z"
             },
             {
               "$type": "Document",

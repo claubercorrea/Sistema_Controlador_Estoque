@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaMvcCompleto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f667d65247252e99ca26e1babe18edd5ed4ced70")]
+>>>>>>> d4def62495c4c7945e88bbb2cfffdcd49132f7f3
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaMvcCompleto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaMvcCompleto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

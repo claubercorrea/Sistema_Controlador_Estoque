@@ -58,7 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 9,
+=======
+          "SelectedChildIndex": 5,
+>>>>>>> d4def62495c4c7945e88bbb2cfffdcd49132f7f3
           "Children": [
             {
               "$type": "Document",
@@ -88,6 +92,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaMvcCompleto\\Program.cs",
+              "ToolTip": "C:\\Users\\ADM\\OneDrive\\Desktop\\github\\ProjetosGrandes\\Sistema_estoque\\Sistema_Controlador_Estoque\\SistemaMvcCompleto\\SistemaMvcCompleto\\Program.cs",
+              "RelativeToolTip": "SistemaMvcCompleto\\Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAwwHcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-31T05:35:52.641Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -147,8 +164,7 @@
               "RelativeToolTip": "SistemaMvcCompleto\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-31T02:55:36.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-31T02:55:36.977Z"
             },
             {
               "$type": "Document",

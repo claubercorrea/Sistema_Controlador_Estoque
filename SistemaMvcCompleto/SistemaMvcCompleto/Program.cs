@@ -64,7 +64,14 @@ builder.Services.AddControllersWithViews(options =>
 
 var app = builder.Build();
 
+<<<<<<< HEAD
 // 5. Executar DbInitializer (Roda ANTES do app aceitar requisições)
+=======
+// 🚀 Força a exibição da página de erro detalhada para depuração na nuvem
+app.UseDeveloperExceptionPage();
+
+// 5. Executar Migrations e DbInitializer automaticamente ao iniciar
+>>>>>>> d4def62495c4c7945e88bbb2cfffdcd49132f7f3
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
